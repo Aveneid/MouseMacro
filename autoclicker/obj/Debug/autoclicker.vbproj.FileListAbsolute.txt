@@ -1,0 +1,11 @@
+c:\users\aveneid\documents\visual studio 2015\Projects\autoclicker\autoclicker\bin\Debug\autoclicker.exe.config
+c:\users\aveneid\documents\visual studio 2015\Projects\autoclicker\autoclicker\bin\Debug\autoclicker.exe
+c:\users\aveneid\documents\visual studio 2015\Projects\autoclicker\autoclicker\bin\Debug\autoclicker.pdb
+c:\users\aveneid\documents\visual studio 2015\Projects\autoclicker\autoclicker\bin\Debug\autoclicker.xml
+c:\users\aveneid\documents\visual studio 2015\Projects\autoclicker\autoclicker\obj\Debug\autoclicker.vbprojResolveAssemblyReference.cache
+c:\users\aveneid\documents\visual studio 2015\Projects\autoclicker\autoclicker\obj\Debug\autoclicker.Form1.resources
+c:\users\aveneid\documents\visual studio 2015\Projects\autoclicker\autoclicker\obj\Debug\autoclicker.Resources.resources
+c:\users\aveneid\documents\visual studio 2015\Projects\autoclicker\autoclicker\obj\Debug\autoclicker.vbproj.GenerateResource.Cache
+c:\users\aveneid\documents\visual studio 2015\Projects\autoclicker\autoclicker\obj\Debug\autoclicker.exe
+c:\users\aveneid\documents\visual studio 2015\Projects\autoclicker\autoclicker\obj\Debug\autoclicker.xml
+c:\users\aveneid\documents\visual studio 2015\Projects\autoclicker\autoclicker\obj\Debug\autoclicker.pdb
