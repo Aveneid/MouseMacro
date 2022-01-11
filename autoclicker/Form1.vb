@@ -95,16 +95,6 @@ Public Class Form1
         ListBox1.Items.Clear()
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        ListBox1.Items.Add(New ListViewItem(" # 666,300"))
-        ListBox1.Items.Add(New ListViewItem(" ! 5000"))
-        ListBox1.Items.Add(New ListViewItem(" ( "))
-        ListBox1.Items.Add(New ListViewItem(" ) "))
-        ListBox1.Items.Add(New ListViewItem(" ! 5000"))
-        ListBox1.Items.Add(New ListViewItem(" # 100,100"))
-        ListBox1.Items.Add(New ListViewItem(" ! 5000"))
-    End Sub
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ListBox1.Items.Clear()
     End Sub
