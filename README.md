@@ -2,10 +2,10 @@
 This program allows you to record mouse actions and play it back.
 
 #### What can it do?
-👉 Record actions
-👉 Play actions
-👉 Wait
-👉 Maybe save the world (?)
+👉 Record actions \
+👉 Play actions \
+👉 Wait \
+👉 Maybe save the world (?) \
 
 ##### Supports mouse actions like:
 - left click
