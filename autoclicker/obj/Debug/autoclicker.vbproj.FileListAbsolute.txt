@@ -22,3 +22,4 @@ C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\obj\Debug\autoclicker.vbp
 C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\obj\Debug\autoclicker.exe
 C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\obj\Debug\autoclicker.xml
 C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\obj\Debug\autoclicker.pdb
+C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\obj\Debug\autoclicker.CustomAction.resources

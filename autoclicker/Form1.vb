@@ -44,7 +44,7 @@ Public Class Form1
     End Sub
 
     Sub execMacro()
-        SetCursorPos(0, 0)
+        'SetCursorPos(0, 0)
         For Each i As ListViewItem In ListBox1.Items
             Select Case i.Text.Substring(1, 1)
                 Case "#"
@@ -134,5 +134,21 @@ Public Class Form1
             Next
         End If
 
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        If CustomAction.ShowDialog = DialogResult.OK Then
+            Dim action As String = CustomAction.action.SelectedItem
+            Select Case action
+                Case "# Set Cursor pos"
+                    ListBox1.Items.Add(New ListViewItem(" # " & CStr(CustomAction.xTb.Text) & "," & CStr(CustomAction.yTb.Text)))
+                Case "! Wait"
+                    ListBox1.Items.Add(New ListViewItem(" ! " & CustomAction.arg.Text))
+                Case "( Left Click"
+                    ListBox1.Items.Add(New ListViewItem(" " & action))
+                Case ") Right Click"
+                    ListBox1.Items.Add(New ListViewItem(" " & action))
+            End Select
+        End If
     End Sub
 End Class
