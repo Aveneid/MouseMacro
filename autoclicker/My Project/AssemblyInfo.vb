@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("autoclicker")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("autoclicker")>
-<Assembly: AssemblyCopyright("Copyright ©  2021")>
+<Assembly: AssemblyTitle("AutoClicker")>
+<Assembly: AssemblyDescription("This program allows you to record mouse actions and play it back.")>
+<Assembly: AssemblyCompany("Aveneid")>
+<Assembly: AssemblyProduct("AutoClicker")>
+<Assembly: AssemblyCopyright("Copyright © Aveneid  2021")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.1.0.0")>
+<Assembly: AssemblyFileVersion("1.1.0.0")>

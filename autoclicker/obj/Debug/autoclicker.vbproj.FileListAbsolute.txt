@@ -9,3 +9,16 @@ c:\users\aveneid\documents\visual studio 2015\Projects\autoclicker\autoclicker\o
 c:\users\aveneid\documents\visual studio 2015\Projects\autoclicker\autoclicker\obj\Debug\autoclicker.exe
 c:\users\aveneid\documents\visual studio 2015\Projects\autoclicker\autoclicker\obj\Debug\autoclicker.xml
 c:\users\aveneid\documents\visual studio 2015\Projects\autoclicker\autoclicker\obj\Debug\autoclicker.pdb
+C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\bin\Debug\autoclicker.exe.config
+C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\bin\Debug\autoclicker.exe
+C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\bin\Debug\autoclicker.pdb
+C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\bin\Debug\autoclicker.xml
+C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\obj\Debug\autoclicker.vbproj.AssemblyReference.cache
+C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\obj\Debug\autoclicker.AboutBox1.resources
+C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\obj\Debug\autoclicker.Form1.resources
+C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\obj\Debug\autoclicker.Resources.resources
+C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\obj\Debug\autoclicker.vbproj.GenerateResource.cache
+C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\obj\Debug\autoclicker.vbproj.CoreCompileInputs.cache
+C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\obj\Debug\autoclicker.exe
+C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\obj\Debug\autoclicker.xml
+C:\Users\b.ferenc\Documents\GIT\MouseMacro\autoclicker\obj\Debug\autoclicker.pdb

@@ -98,4 +98,41 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ListBox1.Items.Clear()
     End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        If t IsNot Nothing Then
+            t.Abort()
+        End If
+        Application.Exit()
+    End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        AboutBox1.ShowDialog()
+    End Sub
+
+    Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
+        SaveFileDialog1.Filter = "AutoClicker Macro (*.atc)|*.atc"
+        Dim tmpStr = ""
+        For Each i As ListViewItem In ListBox1.Items
+            tmpStr &= i.Text & vbNewLine
+        Next
+        If SaveFileDialog1.ShowDialog = DialogResult.OK Then
+            My.Computer.FileSystem.WriteAllText(SaveFileDialog1.FileName, tmpStr, False)
+        End If
+
+    End Sub
+
+    Private Sub LoadToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoadToolStripMenuItem.Click
+        OpenFileDialog1.Filter = "AutoClicker Macro (*.atc)|*.atc"
+        Dim tmpStr = ""
+        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
+            tmpStr = My.Computer.FileSystem.ReadAllText(OpenFileDialog1.FileName)
+            Dim tmpStrEx = tmpStr.Split(vbNewLine)
+            For Each t As String In tmpStrEx
+                t.Replace(vbLf, "")
+                If t.Length > 1 Then ListBox1.Items.Add(New ListViewItem(t))
+            Next
+        End If
+
+    End Sub
 End Class
