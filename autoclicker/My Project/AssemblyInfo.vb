@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("AutoClicker")>
+<Assembly: AssemblyTitle("MouseMacro")>
 <Assembly: AssemblyDescription("This program allows you to record mouse actions and play it back.")>
 <Assembly: AssemblyCompany("Aveneid")>
-<Assembly: AssemblyProduct("AutoClicker")>
+<Assembly: AssemblyProduct("MouseMacro")>
 <Assembly: AssemblyCopyright("Copyright © Aveneid  2021")>
 <Assembly: AssemblyTrademark("")>
 
