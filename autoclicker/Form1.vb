@@ -58,7 +58,7 @@ Public Class Form1
                 Case "!"
                     t.Sleep(Int(i.Text.Substring(2)))
             End Select
-            If i.Index = ListBox1.Items.Count Then
+            If i.Index = ListBox1.Items.Count - 1 Then
                 t.Abort()
                 StatusStrip1.Text = "Waiting...."
             End If
@@ -86,8 +86,6 @@ Public Class Form1
                 If ms.Length > 0 Then
                     ListBox1.Items.Add(New ListViewItem(" ! " & ms))
                 End If
-            Case Keys.Delete
-                ListBox1.Items.RemoveAt(ListBox1.SelectedIndex)
         End Select
     End Sub
 
@@ -98,6 +96,7 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ListBox1.Items.Clear()
     End Sub
+
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         If t IsNot Nothing Then
@@ -150,5 +149,52 @@ Public Class Form1
                     ListBox1.Items.Add(New ListViewItem(" " & action))
             End Select
         End If
+    End Sub
+
+    Private Sub ListBox1_MouseDown(sender As Object, e As MouseEventArgs) Handles ListBox1.MouseDown
+        If ListBox1.SelectedItem IsNot Nothing Then
+            ListBox1.DoDragDrop(ListBox1.SelectedItem, DragDropEffects.Move)
+        End If
+    End Sub
+
+    Private Sub ListBox1_DragDrop(sender As Object, e As DragEventArgs) Handles ListBox1.DragDrop
+        Dim point = ListBox1.PointToClient(New Point(e.X, e.Y))
+        Dim idx = ListBox1.IndexFromPoint(point)
+        If idx < 0 Then idx = ListBox1.Items.Count - 1
+        Dim data = ListBox1.SelectedItem
+        ListBox1.Items.Remove(data)
+        ListBox1.Items.Insert(idx, data)
+    End Sub
+
+    Private Sub ListBox1_DragOver(sender As Object, e As DragEventArgs) Handles ListBox1.DragOver
+        e.Effect = DragDropEffects.Move
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        If ListBox1.SelectedIndex > -1 Then
+            Dim data = ListBox1.SelectedItem
+            ListBox1.Items.Remove(data)
+            ListBox1.Items.Insert(ListBox1.SelectedIndex - 1, data)
+        End If
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        If ListBox1.SelectedIndex < ListBox1.Items.Count - 1 Then
+            Dim data = ListBox1.SelectedItem
+            ListBox1.Items.Remove(data)
+            ListBox1.Items.Insert(ListBox1.SelectedIndex + 1, data)
+        End If
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        t.Abort()
+        StatusStrip1.Text = "Aborted..."
+    End Sub
+
+    Private Sub ListBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles ListBox1.KeyDown
+        Select Case e.KeyCode
+            Case Keys.Delete
+                ListBox1.Items.Remove(ListBox1.SelectedIndex)
+        End Select
     End Sub
 End Class
