@@ -46,7 +46,8 @@ Public Class Form1
     Sub execMacro()
         'SetCursorPos(0, 0)
         For Each i As ListViewItem In ListBox1.Items
-            Select Case i.Text.Substring(1, 1)
+            i.Text = i.Text.Trim()
+            Select Case i.Text.Substring(0, 1)
                 Case "#"
                     SetCursorPos(i.Text.Substring(2).Split(",")(0), i.Text.Substring(3).Split(",")(1))
                 Case "("
@@ -62,6 +63,7 @@ Public Class Form1
                 t.Abort()
                 StatusStrip1.Text = "Waiting...."
             End If
+            t.Sleep(1)
         Next
     End Sub
 
